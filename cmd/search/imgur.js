@@ -12,7 +12,7 @@ module.exports = {
     let num = Math.floor(Math.random() * 11)
     let json = {
       url: `https://api.imgur.com/3/gallery/search/time/all/0?q=${arg}`,
-      headers:{Authorization: `CLIENT-ID ` + "57042e891c57199"}}
+      headers:{Authorization: `CLIENT-ID ` + ""}}
     let fun = (error, response, body) => {
       if (!error && response.statusCode == 200) {
         const jsoon = JSON.parse(body)
