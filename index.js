@@ -6,7 +6,7 @@ const youtube = require("simple-youtube-api")
 const client = new Discord.Client({disableMentions: "everyone", 
            partials: ['MESSAGE', 'CHANNEL', 'REACTION', "GUILD_MEMBER"] })
 client.commands = new Discord.Collection()
-client.yt = new youtube("AIzaSyDPKa-U_1Vkfxvun0FzlZcbViNOayLeck8");
+client.yt = new youtube("");
 client.remind = new db.table("remind")
 client.db1 = new db.table("welcom")
 client.db2 = new db.table("goodby")
@@ -22,11 +22,11 @@ const snoowrap = require('snoowrap');
 
 client.queue = new Map();
 client.reddit = new snoowrap({
-  userAgent: "goldenbot",
-  clientId: "bg01h7AJ20HHjA",
-  clientSecret: "P_kR1kEYVsFCPUay5h_270XUNZ4",
-  username: 'cutesavage694',
-  password: "amazigh2005" // o ok
+  userAgent: "",
+  clientId: "",
+  clientSecret: "",
+  username: '',
+  password: "" // o ok
 });
 
 
@@ -37,7 +37,7 @@ const BotList = require('botlist');
 const botID = "481489864626536458";
 const omfg = new BotList.Client(botID, {
     tokens: {
-        "discordextremelist.xyz": "DELAPI_eee5c4572375bd01c309c97a8dbe1268-481489864626536458"
+        "discordextremelist.xyz": ""
     },
     interval: 1000 * 60 * 30
 });
@@ -406,4 +406,4 @@ client.on("roleUpdate", (oldRole, newRole)=> {
 });
 
 
-client.login("NDgxNDg5ODY0NjI2NTM2NDU4.Xm6Yew.s8qpL6s4lxc_DGZ-glyL87WzRmw")
+client.login("")
